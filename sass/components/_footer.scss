@@ -1,0 +1,120 @@
+/*Footer*/
+.footer {
+  background-color: $bg-color-dark;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials__list {
+  display: flex;
+}
+
+.footer-socials {
+  margin-left: 70px;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.footer-subscribe__form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-subscribe__label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text-color-white-transparent;
+
+  .footer-subscribe__input:focus + &,
+  .footer-subscribe__input:not(:placeholder-shown) + & {
+    color: transparent;
+  }
+}
+
+.footer-socials__cta,
+.footer-subscribe__cta {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-white;
+  line-height: 1.14;
+}
+
+.footer-subscribe__input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: $color-white;
+  font-size: 16px;
+}
+
+.footer-socials__link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $footer-socials-bg;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+}
+
+.footer-socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: $color-white;
+}
+
+.footer-address__list,
+.footer-socials__list {
+  margin-top: 20px;
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address__link {
+  color: $text-color-white-transparent;
+  font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.logo--footer {
+  color: $color-white;
+}
+
+.footer-address__link--map {
+  color: $color-white;
+}

@@ -1,0 +1,20 @@
+/* Hero */
+.section--hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $bg-color-dark;
+  background-image: linear-gradient($gradient-color, $gradient-color), url('../images/hero.jpg');
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  color: $color-white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+/* Occupation */
+
+.occupation__list {
+  display: flex;
+}
+
+.occupation__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.occupation__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+
+  color: $color-white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: uppercase;
+
+  padding: 27px 0;
+  text-align: center;
+
+  background-color: $occupation-title-bg;
+}

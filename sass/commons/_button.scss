@@ -1,0 +1,99 @@
+/* Buttons */
+
+.button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  color: $text-color-title;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: $bg-color-inactive;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-accent;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.button--filter:hover,
+.button--filter:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button--hero {
+  color: $color-white;
+  background-color: $color-accent;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+}
+.button--footer-submit {
+  display: inline-flex;
+  align-items: center;
+  box-shadow: $button-shadow;
+  height: 50px;
+
+  color: $color-white;
+  background-color: $color-accent;
+}
+
+.button__icon-send {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}
+
+.button--modal-submit {
+  display: block;
+  height: 50px;
+  min-width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: $button-shadow;
+
+  color: $color-white;
+  background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-darker;
+  }
+}
+
+.button--close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+
+  border: 1px solid $close-btn-border;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover .button__close-icon,
+  &:focus .button__close-icon {
+    fill: $color-accent;
+  }
+}
+
+.button__close-icon {
+  width: 11px;
+  height: 11px;
+}

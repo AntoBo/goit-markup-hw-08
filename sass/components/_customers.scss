@@ -1,0 +1,39 @@
+/* Customers */
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customers__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  fill: $customer-logo;
+  border: 1px solid $customer-logo;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-accent;
+    cursor: pointer;
+  }
+}
+
+.customers__icon {
+  width: 106px;
+  height: 60px;
+
+  .customers__item:hover &,
+  .customers__item:focus & {
+    fill: $color-accent;
+  }
+}
