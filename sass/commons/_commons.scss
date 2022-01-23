@@ -1,10 +1,6 @@
 body {
   background-color: $color-white;
   font-family: Roboto, sans-serif;
-  // color: $text-color-main;
-  // font-size: 14px;
-  // letter-spacing: 0.03em;
-  // line-height: 1.71;
 
   @include font-style(14px, null, 1.71, 0.03em, $text-color-main);
 }
