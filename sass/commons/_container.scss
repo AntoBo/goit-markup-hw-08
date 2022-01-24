@@ -1,0 +1,14 @@
+.container {
+  //   min-width: $min-mobile-res;
+  max-width: $mobile-res;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include mq(tablet) {
+    max-width: $tablet-res;
+  }
+
+  @include mq(desktop) {
+    max-width: $desktop-res;
+  }
+}

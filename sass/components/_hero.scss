@@ -1,20 +1,33 @@
 /* Hero */
 .section--hero {
-  max-width: 1600px;
+  // min-width: $mobile-res;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: $bg-color-dark;
-  background-image: linear-gradient($gradient-color, $gradient-color), url('../images/hero.jpg');
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+  background-color: $bg-color-dark;
+  background-size: cover;
+  background-image: linear-gradient($gradient-color, $gradient-color),
+    url('../images/mobile/hero/img.jpg');
+
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url('../images/mobile/hero/img@2x.jpg');
+  // }
+
+  // @media screen and (min-width: $tablet-res) {
+  //   background-image: linear-gradient($gradient-color, $gradient-color),
+  //     url('../images/tablet/hero/img.jpg');
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: url('../images/tablet/hero/img@2x.jpg');
+  //   }
+  // }
+
+  // @media screen and (min-width: $desktop-res) {
+  // }
 }
 
 .hero-title {
+  @include font-style(26px, 900, 1.61, null, $color-white);
   margin-bottom: 30px;
-  color: $color-white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }

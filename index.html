@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
@@ -59,6 +60,12 @@
             >
           </li>
         </ul>
+        <button class="button--menu" type="button">
+          <svg width="40" , height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -131,7 +138,7 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="occupation section">
+      <!-- <section class="occupation section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="occupation__list list">
@@ -149,17 +156,22 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
-
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__member-item item">
               <img
                 class="team-member-picture"
+                srcset="
+                  ./images/mobile/igor-demianenko/img.jpg  450w,
+                  ./images/tablet/igor-demianenko/img.jpg  354w,
+                  ./images/desktop/igor-demianenko/img.jpg 270w
+                "
+                sizes="(min-width: 1200) 20vw, (min-width: 960px) 50vw, (min-width: 576px) 100vw, 100vw"
                 src="./images/igor-demianenko.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
@@ -332,11 +344,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные клиенты -->
-
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="customers__list list">
@@ -372,10 +383,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__container container">
         <div class="footer-adress">
           <a class="logo logo--footer link" href="./index.html"
@@ -459,7 +470,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
     <div class="backdrop is-hidden animated" data-modal>

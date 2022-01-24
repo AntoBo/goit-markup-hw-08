@@ -1,16 +1,21 @@
 /* Sections */
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include mq(desktop) {
+    padding: 94px 0;
+  }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    text-align: center;
 
     @include font-style(36px, 700, 1.16, null, $text-color-title);
-    // color: $text-color-title;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    text-align: center;
+
+    @include mq(desktop) {
+      margin-bottom: 50px;
+      @include font-style(28px, 700, 1.18, null, $text-color-title);
+    }
   }
 }
