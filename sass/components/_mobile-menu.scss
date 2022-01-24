@@ -1,0 +1,61 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+
+  background-color: $color-white;
+}
+
+.mobile-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @include font-style(40px, 500, 1.18, 0.02em, $text-color-title);
+
+  &--active {
+    color: $color-accent;
+  }
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts-phone {
+  @include font-style(34px, 500, 1.18, 0.02em, $color-accent);
+}
+.mobile-contacts-email {
+  @include font-style(24px, 500, 1.16, 0.02em, $text-color-main);
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.mobile-socials-item {
+  padding: 0 10px;
+  &:first-child {
+    padding: 0 10px 0 0;
+  }
+}
+
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-socials-link {
+  @include font-style(18px, 500, 2, 0.02em, $color-accent);
+}

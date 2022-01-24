@@ -99,6 +99,15 @@
 }
 
 .button--menu {
-  background-color: transparent;
-  border: none;
+  display: none;
+
+  @include mq(mobile-only) {
+    display: block;
+    z-index: 100;
+    position: relative;
+    padding: 10px 0;
+
+    background-color: transparent;
+    border: none;
+  }
 }

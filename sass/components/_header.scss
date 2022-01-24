@@ -9,8 +9,12 @@
 .logo {
   color: $color-black;
   font-family: Raleway, cursive;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  @include mq(desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__accent {
@@ -18,16 +22,44 @@
 }
 
 /* Site nav */
-.header__container,
-.header__nav,
-.header__nav-pages,
+.header__nav-pages {
+  display: none;
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .header__contacts {
-  // display: flex;
-  // align-items: center;
+  display: none;
+  @include mq(tablet) {
+    display: block;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__container,
+.header__nav {
+  display: flex;
+  align-items: center;
+
+  @include mq(mobile-only) {
+    justify-content: space-between;
+  }
 }
 
 .header__nav-pages {
-  margin-left: 93px;
+  @include mq(tablet) {
+    margin-left: 88px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 93px;
+  }
 }
 
 .header__contacts {
@@ -39,23 +71,30 @@
 }
 
 .header__contacts-item + .header__contacts-item {
-  margin-left: 30px;
+  @include mq(tablet-only) {
+    margin-top: 10px;
+  }
+  @include mq(desktop) {
+    margin-left: 30px;
+  }
 }
 
-.header__nav-link,
-.header__contacts-link {
+.header__nav-link {
   position: relative;
   display: block;
   padding: 32px 0;
 
-  color: $text-color-title;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-style(null, 500, 1.14, 0.02em, $text-color-title);
 }
 
 .header__contacts-link {
-  color: $text-color-main;
+  position: relative;
+  display: block;
+
+  @include mq(desktop) {
+    padding: 32px 0;
+  }
+  @include font-style(null, 500, 1.14, 0.02em, $text-color-main);
 }
 
 .header__nav-link--current::after {

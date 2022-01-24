@@ -3,23 +3,29 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
+
+  margin: -15px;
 }
 
 .customers__item {
+  @include grid(15px, 2);
+
+  @include mq(tablet) {
+    @include grid(15px, 3);
+  }
+
+  @include mq(desktop) {
+    @include grid(15px, 6);
+  }
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 170px;
   height: 92px;
 
   fill: $customer-logo;
   border: 1px solid $customer-logo;
   border-radius: 4px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 
   &:hover,
   &:focus {
