@@ -1,6 +1,7 @@
 /* Hero */
 .section--hero {
-  // min-width: $mobile-res;
+  // max-width: $mobile-res;
+
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -9,6 +10,21 @@
   background-size: cover;
   background-image: linear-gradient($gradient-color, $gradient-color),
     url('../images/mobile/hero/img.jpg');
+
+  @include mq(tablet) {
+    min-width: $tablet-res;
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url('../images/tablet/hero/img.jpg');
+  }
+
+  @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    min-width: $desktop-res;
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url('../images/desktop/hero/img.jpg');
+  }
 
   // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   //   background-image: url('../images/mobile/hero/img@2x.jpg');

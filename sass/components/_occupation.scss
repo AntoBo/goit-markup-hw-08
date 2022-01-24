@@ -1,8 +1,13 @@
 /* Occupation */
 
+.occupation.section {
+  @include mq(notDesktop) {
+    display: none;
+  }
+}
+
 .occupation__list {
-  // display: flex;
-  display: none;
+  display: flex;
 }
 
 .occupation__item {

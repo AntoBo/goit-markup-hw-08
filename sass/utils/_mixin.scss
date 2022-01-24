@@ -62,3 +62,10 @@
     }
   }
 }
+
+//use @include grid(15px, 2);
+
+@mixin grid($margins, $columns) {
+  margin: $margins;
+  flex-basis: calc((100% - 2 * #{$columns} * #{$margins}) / #{$columns});
+} ;
