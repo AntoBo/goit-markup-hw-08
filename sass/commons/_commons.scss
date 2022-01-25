@@ -11,6 +11,11 @@ body {
   &:focus-visible {
     outline: none;
   }
+
+  &:visited {
+    // text-decoration: none;
+    // color: currentColor;
+  }
 }
 
 .list {

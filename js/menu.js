@@ -12,6 +12,6 @@
 
       mobileMenuRef.classList.toggle("is-open");
       
-      body.classList.toggle("no-scroll")
+      body.classList.toggle("no-scroll");
   });
 })();

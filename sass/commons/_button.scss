@@ -103,7 +103,7 @@
 
   @include mq(mobile-only) {
     display: block;
-    z-index: 100;
+    z-index: 10;
     position: relative;
     padding: 10px 0;
 

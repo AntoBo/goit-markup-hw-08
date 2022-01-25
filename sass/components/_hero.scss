@@ -3,12 +3,18 @@
   // max-width: $mobile-res;
 
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+
   text-align: center;
   background-color: $bg-color-dark;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include mq(mobile) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
   background-image: linear-gradient($gradient-color, $gradient-color),
     url('../images/mobile/hero/img.jpg');
   @include mq(retina) {

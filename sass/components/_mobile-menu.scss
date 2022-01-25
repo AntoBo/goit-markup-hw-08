@@ -1,19 +1,20 @@
 .mobile-menu {
-  display: none;
+  // display: none;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+
+  background-color: $color-white;
   &.is-open {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 48px 40px;
-
-    background-color: $color-white;
+    transform: translatex(-100%);
   }
 }
 
@@ -21,7 +22,9 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+}
 
+.mobile-link {
   @include font-style(40px, 500, 1.18, 0.02em, $text-color-title);
 
   &--active {
