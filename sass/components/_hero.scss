@@ -7,23 +7,37 @@
   padding-bottom: 118px;
   text-align: center;
   background-color: $bg-color-dark;
-  background-size: cover;
+  background-size: contain;
+
   background-image: linear-gradient($gradient-color, $gradient-color),
     url('../images/mobile/hero/img.jpg');
+  @include mq(retina) {
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url('../images/mobile/hero/img@2x.jpg');
+  }
 
   @include mq(tablet) {
     min-width: $tablet-res;
     background-image: linear-gradient($gradient-color, $gradient-color),
       url('../images/tablet/hero/img.jpg');
+    @include mq(retina) {
+      background-image: linear-gradient($gradient-color, $gradient-color),
+        url('../images/tablet/hero/img@2x.jpg');
+    }
   }
 
   @include mq(desktop) {
+    min-width: $desktop-res;
+
     padding-top: 200px;
     padding-bottom: 200px;
 
-    min-width: $desktop-res;
     background-image: linear-gradient($gradient-color, $gradient-color),
       url('../images/desktop/hero/img.jpg');
+    @include mq(retina) {
+      background-image: linear-gradient($gradient-color, $gradient-color),
+        url('../images/desktop/hero/img@2x.jpg');
+    }
   }
 
   // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

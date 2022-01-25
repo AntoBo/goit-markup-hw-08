@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body class="page">
     <!--Header-->
     <header class="header">
       <div class="header__container container">
@@ -60,6 +60,55 @@
             >
           </li>
         </ul>
+        <button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="button--menu"
+          type="button"
+          data-menu-button
+        >
+          <svg aria-label="Переключатель мобильного меню" width="40" , height="40">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <ul class="mobile-list list">
+            <li class="mobile-item mobile-item--active">
+              <a class="mobile-link link" href="./index.html"></a>Студия
+            </li>
+            <li class="mobile-item">
+              Портфолио<a class="mobile-link link" href="./portfolio.html"></a>
+            </li>
+            <li class="mobile-item">Контакты<a class="mobile-link link" href=""></a></li>
+          </ul>
+          <div class="mobile-menu-wrapper">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-socials list">
+              <li class="mobile-socials-item">
+                <a class="mobile-socials-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-socials-item">
+                <a class="mobile-socials-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-socials-item">
+                <a class="mobile-socials-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-socials-item">
+                <a class="mobile-socials-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -95,12 +144,50 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
+
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/technocrack/img.jpg    1x,
+                        ./images/desktop/technocrack/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/technocrack/img.jpg    1x,
+                        ./images/tablet/technocrack/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/technocrack/img.jpg    1x,
+                        ./images/mobile/technocrack/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/technocrack/img.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio__img"
                     src="./images/technocrack.jpg"
                     alt="Технокряк"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Технокряк</h2>
@@ -118,12 +205,43 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/basketball.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/basketball/img.jpg    1x,
+                        ./images/desktop/basketball/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/basketball/img.jpg    1x,
+                        ./images/tablet/basketball/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/basketball/img.jpg    1x,
+                        ./images/mobile/basketball/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/basketball/img.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
@@ -141,12 +259,43 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/seafood/img.jpg    1x,
+                        ./images/desktop/seafood/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/seafood/img.jpg    1x,
+                        ./images/tablet/seafood/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/seafood/img.jpg    1x,
+                        ./images/mobile/seafood/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/seafood/img.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
@@ -164,12 +313,37 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/prime/img.jpg    1x,
+                        ./images/desktop/prime/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/prime/img.jpg 1x, ./images/tablet/prime/img@2x.jpg 2x"
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/prime/img.jpg 1x, ./images/mobile/prime/img@2x.jpg 2x"
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/prime/img.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Проект Prime</h2>
@@ -187,12 +361,37 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/boxes/img.jpg    1x,
+                        ./images/desktop/boxes/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/boxes/img.jpg 1x, ./images/tablet/boxes/img@2x.jpg 2x"
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/boxes/img.jpg 1x, ./images/mobile/boxes/img@2x.jpg 2x"
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/boxes/img.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Проект Boxes</h2>
@@ -210,12 +409,43 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/inspiration.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/inspiration/img.jpg    1x,
+                        ./images/desktop/inspiration/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/inspiration/img.jpg    1x,
+                        ./images/tablet/inspiration/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/inspiration/img.jpg    1x,
+                        ./images/mobile/inspiration/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/inspiration/img.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
@@ -233,12 +463,43 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/magazine.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/magazine/img.jpg    1x,
+                        ./images/desktop/magazine/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/magazine/img.jpg    1x,
+                        ./images/tablet/magazine/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/magazine/img.jpg    1x,
+                        ./images/mobile/magazine/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/magazine/img.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Издание Limited Edition</h2>
@@ -256,7 +517,34 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img class="portfolio__img" src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/lab/img.jpg 1x, ./images/desktop/lab/img@2x.jpg 2x"
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/lab/img.jpg 1x, ./images/tablet/lab/img@2x.jpg 2x"
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/lab/img.jpg 1x, ./images/mobile/lab/img@2x.jpg 2x"
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/lab/img.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Проект LAB</h2>
@@ -274,12 +562,43 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__img"
-                    src="./images/growing-businnes.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/growing-businnes/img.jpg    1x,
+                        ./images/desktop/growing-businnes/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/growing-businnes/img.jpg    1x,
+                        ./images/tablet/growing-businnes/img@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/growing-businnes/img.jpg    1x,
+                        ./images/mobile/growing-businnes/img@2x.jpg 2x
+                      "
+                      media="(max-width:
+                  767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="portfolio__img"
+                      src="./images/mobile/growing-businnes/img.jpg"
+                      alt="Growing Business"
+                      width="450"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__cards-text">
                   <h2 class="portfolio__title">Growing Business</h2>
@@ -294,7 +613,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer-adress">
+        <div class="footer-adress footer__item">
           <a class="logo logo--footer link" href="./index.html"
             ><span class="logo__accent">Web</span>Studio
           </a>
@@ -321,7 +640,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
+        <div class="footer-socials footer__item">
           <p class="footer-socials__cta">присоединяйтесь</p>
           <ul class="footer-socials__list list">
             <li class="footer-socials__item item">
@@ -354,7 +673,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
+        <div class="footer-subscribe footer__item">
           <span class="footer-subscribe__cta">Подпишитесь на рассылку</span>
           <form class="footer-subscribe__form" name="subscribe-form">
             <label>
@@ -377,5 +696,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
