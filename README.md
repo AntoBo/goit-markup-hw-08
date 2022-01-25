@@ -1,1 +1,1 @@
-hero imgs upd
+hero imgs upd img_bg

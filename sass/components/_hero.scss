@@ -39,10 +39,10 @@
     padding-bottom: 200px;
 
     background-image: linear-gradient($gradient-color, $gradient-color),
-      url('../images/desktop/hero/img.jpg');
+      url('../images/desktop/hero/img_bg.jpg');
     @include mq(retina) {
       background-image: linear-gradient($gradient-color, $gradient-color),
-        url('../images/desktop/hero/img@2x.jpg');
+        url('../images/desktop/hero/img_bg@2x.jpg');
     }
   }
 
