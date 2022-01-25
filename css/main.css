@@ -92,12 +92,12 @@ body {
 
 /* Sections */
 .section {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -666,8 +666,12 @@ body {
 }
 
 /* Occupation */
+.occupation {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199.98px) {
-  .occupation.section {
+  .occupation {
     display: none;
   }
 }
@@ -876,14 +880,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #2f303a;
-  margin-top: 60px;
   padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    margin-top: 94px;
-  }
 }
 
 @media screen and (min-width: 768px) {

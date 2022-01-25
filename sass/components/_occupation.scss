@@ -1,6 +1,8 @@
 /* Occupation */
 
-.occupation.section {
+.occupation {
+  padding-top: 0;
+
   @include mq(notDesktop) {
     display: none;
   }

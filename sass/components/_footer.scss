@@ -4,10 +4,6 @@
   justify-content: center;
   background-color: $bg-color-dark;
 
-  margin-top: 60px;
-  @include mq(desktop) {
-    margin-top: 94px;
-  }
   padding: 60px 0;
 }
 

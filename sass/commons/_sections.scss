@@ -1,9 +1,9 @@
 /* Sections */
 
 .section {
-  padding-top: 60px;
+  padding: 60px 0;
   @include mq(desktop) {
-    padding-top: 94px;
+    padding: 94px 0;
   }
 
   &__title {
