@@ -186,15 +186,67 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="occupation__list list">
             <li class="occupation__item item">
-              <img src="./images/coding.jpg" alt="Пишем код сайта" width="370" />
+              <picture>
+                <source
+                  srcset="./images/desktop/coding/img.jpg 1x, ./images/desktop/coding/img@2x.jpg 2x"
+                  media="(min-width:
+                  1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member-picture"
+                  src="./images/desktop/coding/img.jpg"
+                  alt="Десктопные приложения"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <img src="./images/coding.jpg" alt="Пишем код сайта" width="370" /> -->
               <p class="occupation__title">Десктопные приложения</p>
             </li>
             <li class="occupation__item item">
-              <img src="./images/marking.jpg" alt="Делаем разметку" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/marking/img.jpg    1x,
+                    ./images/desktop/marking/img@2x.jpg 2x
+                  "
+                  media="(min-width:
+                  1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member-picture"
+                  src="./images/desktop/marking/img.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="occupation__title">Мобильные приложения</p>
             </li>
             <li class="occupation__item item">
-              <img src="./images/designing.jpg" alt="Создаем дизайны" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/designing/img.jpg    1x,
+                    ./images/desktop/designing/img@2x.jpg 2x
+                  "
+                  media="(min-width:
+                  1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member-picture"
+                  src="./images/desktop/designing/img.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="occupation__title">Дизайнерские решения</p>
             </li>
           </ul>
