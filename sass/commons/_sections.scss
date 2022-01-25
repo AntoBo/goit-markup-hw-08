@@ -1,8 +1,7 @@
 /* Sections */
 
 .section {
-  padding: 60px 0;
-
+  padding-top: 60px;
   @include mq(desktop) {
     padding-top: 94px;
   }

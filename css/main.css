@@ -92,7 +92,7 @@ body {
 
 /* Sections */
 .section {
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -168,6 +168,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   height: 50px;
+  margin-left: 12px;
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -875,7 +876,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #2f303a;
+  margin-top: 60px;
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
