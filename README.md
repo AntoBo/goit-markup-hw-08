@@ -1,6 +1,1 @@
--
--
--
--
-
-- переносится текст Постер New Orlean vs Golden Star
+hero imgs upd
